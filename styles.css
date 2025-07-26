@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --ff-display: "Sora", sans-serif;
+    --ff-mono: "Roboto Mono", monospace;
+    --ff-flex: "Roboto Flex", sans-serif;
+    
+    --ff-display-lg:800 4.5rem/1.3rem var(--ff-display);
+    --ff-medium-md: 800 2.5rem/1.3rem var(--ff-display);
+    --ff-small:700 2rem/1.3rem var(--ff-display);
+
+    --overline: 700 2rem/1.5rem var(--ff-mono);
+
+    --paraghaph-lg:500 1rem/1.5rem var(--ff-flex);
+    --paragraph-md:500 0.875rem/1.5rem var(--ff-flex);
+    --paragraph-sm:500 0.75rem/1.5rem var(--ff-flex);
+    --label-md:700 1.25rem/1.5rem var(--ff-flex);
+    --label-sm:700 1rem/1.5rem var(--ff-flex);
+
+}
