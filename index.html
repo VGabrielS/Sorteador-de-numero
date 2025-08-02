@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 
     <title>Sorteador de Números</title>
 
@@ -15,6 +15,61 @@
 </head>
 
 <body>
+    <div id="logo" class="logo"> 
+        <img src="img/logo.svg" alt="">
+        <h2>NUMBERS</h2>
+    </div>
     
+    
+    <header class="A">
+        <h3>ONLINE - GRATUITO</h3>
+        
+        <h1>SORTEADOR DE NÚMEROS</h1>
+    </header>
+    
+    <section class="B">
+        <div>
+            <img src="Icon/people.svg" alt="">
+            <span>Como funciona o sorteador de números?</span>
+            <p>O sorteador utiliza um algoritmo de geração aleatória para criar números dentro do intervalo especificado pelo usuário.</p>
+        </div>
+        <div>
+            <img src="Icon/people.svg" alt="">
+            <span>Posso escolher o intervalo dos números?</span>
+            <p>Sim, você pode definir os valores mínimo e máximo para o intervalo dos números sorteados.</p>
+        </div>
+    </section>
+    
+    <form action="" class="C"> 
+        <fieldset>
+            <legend>QUERO SORTEAR:</legend>
+            <span>defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É rápido e fácil!</span> 
+            
+                
+            <div class="container">
+                <div class="label">NÚMEROS</div>
+                <input type="text" class="number-input"/>
+                <div class="label">DE</div>
+                <input type="text" class="number-input"/>
+                <div class="label">DE</div>
+                <input type="text" class="number-input"/>
+            </div>
+
+            <label class="switch">
+            <input type="checkbox"/>
+            <span class="slider"> Não repetir número</span>
+            </label>
+            
+
+            <div class="btn">
+
+                <button>
+                    SORTEAR  <img src="Icon/seta.svg" alt="">
+                </button>
+            </div>
+        </fieldset>
+    </form>
+    
+       
 </body>
 </html>
