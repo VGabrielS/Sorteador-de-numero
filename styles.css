@@ -155,14 +155,40 @@ body {
                 }
 
             }
-
-
         }
-
     }
-    
+
+   
+
+    & .form-2 {
         
-}   
+        & fieldset {
+
+
+            & span {
+                font: 700 3rem/1.5rem var(--ff-mono);
+                color: #C58DE7;
+            }
+
+            & h3 {
+                font: var(--overline);
+                color: #3D3D3D;
+                padding-bottom: 2rem;
+                padding-top:0.5rem;
+            }
+        }
+           
+    }
+
+} 
+
+.display-none {
+    display: none;
+}
+
+.display-initial {
+    display: initial;
+}
 
 @media (width >=80em) {
 
