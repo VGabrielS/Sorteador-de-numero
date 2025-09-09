@@ -40,7 +40,7 @@
         </div>
     </section>
     
-    <form action="" class="display-initial form-1"> 
+    <form id="form-1" class="display-intial"> 
         <fieldset>
             <legend>QUERO SORTEAR:</legend>
             <span>defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É rápido e fácil!</span> 
@@ -48,21 +48,20 @@
                 
             <div class="container">
                 <div class="label">NÚMEROS</div>
-                <input type="text" class="number-input"/>
+                <input type="text" class="number-input" id="quantity" required/>
                 <div class="label">DE</div>
-                <input type="text" class="number-input"/>
+                <input type="text" class="number-input" id="min"required/>
                 <div class="label">DE</div>
-                <input type="text" class="number-input"/>
+                <input type="text" class="number-input" id="max" required/>
             </div>
 
-            <label class="switch">
+            
             <input type="checkbox"/>
-            <span class="slider"> Não repetir número</span>
-            </label>
+            <span> Não repetir número</span>
+
             
 
-            <div class="btn">
-
+            <div class="btn" id="btn">
                 <button>
                     SORTEAR  <img src="Icon/seta.svg" alt="">
                 </button>
@@ -70,27 +69,35 @@
         </fieldset>
     </form>
 
-    <form action="" class="display-none form-2">
+    <form id="form-2" class="display-none">
         <fieldset>
             <legend>RESULTADO DO SORTEIO</legend>
 
-            <h3>1° RESULTADO</h3>
+            <div class="result">
+                <h3>1° RESULTADO</h3>
+                <Span>
+                    99 99
+                </Span>
+            </div>
 
-            <Span id="result">
-                23 12
-            </Span>
+            <div class="result">
+                <h3>2° RESULTADO</h3>
+                <Span>
+                    99 99
+                </Span>
+            </div>
 
-            <div class="btn">
+
+            <div class="btn" id="btn">
                     <button>
                         SORTEAR NOVAMENTE  <img src="Icon/play.svg" alt="">
                     </button>
             </div>
         </fieldset>
-
     </form>
 
 
-    
+    <script src="scripts.js"></script>
        
 </body>
 </html>

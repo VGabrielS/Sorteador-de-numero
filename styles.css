@@ -135,7 +135,7 @@ body {
                 color: #FFFFFF;
             }
 
-            & .btn {
+            & .btn{
                 padding-top: 2.5rem;
                 padding-bottom: 5rem;
 
@@ -160,10 +160,9 @@ body {
 
    
 
-    & .form-2 {
+    & #form-2 {
         
         & fieldset {
-
 
             & span {
                 font: 700 3rem/1.5rem var(--ff-mono);
@@ -174,7 +173,7 @@ body {
                 font: var(--overline);
                 color: #3D3D3D;
                 padding-bottom: 2rem;
-                padding-top:0.5rem;
+                padding-top:1rem;
             }
         }
            
@@ -244,7 +243,7 @@ body {
 
             & fieldset {
 
-                & .btn {
+                & .btn-1 {
                     
                     & button {
     
