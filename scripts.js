@@ -37,10 +37,30 @@ function newNumber() {
     const min = parseInt(numberMin.value)
     const max = parseInt(numberMax.value)
 
+    const checkbox = document.getElementById("check")
 
-    for (let i = 0; i < qtd; i++) {
-        let result = Math.floor(Math.random() * (max - min + 1)) + min;
-        console.log(result);
+    result = []
+    
+    function LuckNumber() {
+        // Realizar o sorteio dos números
+        while (result.length < qtd) {
+            Nresult = Math.floor(Math.random() * (max - min + 1)) + min;
+             
+            if (checkbox.checked) {
+                if (result.includes(Nresult)) {
+
+                } else {
+                result.push(Nresult)
+                }
+            } else {
+                result.push(Nresult)
+            }
+            
+        }
     }
+    console.log(result)
+
+    LuckNumber()
+    
 }
 
