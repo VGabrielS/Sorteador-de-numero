@@ -199,7 +199,6 @@ body {
 
 
     & body{
-        overflow: hidden;
 
         display: grid;
         grid-template-areas: 
