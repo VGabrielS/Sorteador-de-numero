@@ -164,6 +164,12 @@ body {
         
         & fieldset {
 
+            & li{
+                text-decoration: none;
+                padding-top: 3rem;
+                padding-bottom: 1rem;
+            } 
+
             & span {
                 font: 700 3rem/1.5rem var(--ff-mono);
                 color: #C58DE7;

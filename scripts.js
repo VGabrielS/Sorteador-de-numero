@@ -1,28 +1,19 @@
-/*
-     1° Passo Capturar os eventos de click e input
-     2° Passo aplicar Regex nos inputs para aceitar somente números
-     3° Passo  sortear número de acordo com o intervalo de número selecionado
-     4° Mostrar resultados
-     5° Aparecer input de sortear novamente.
-*/
-
+// Recuperando inputs
 const btnNewNumber = document.getElementById("btn")
 const quantityNumber = document.getElementById("quantity")
 const numberMin = document.getElementById("min")
 const numberMax = document.getElementById("max")
+const form1 = document.getElementById("form-1")
+const form2 = document.getElementById("form-2")
+const list = document.getElementById("draw")
 
 /*  
-    
-    Butão do "sorteio" após o click no butão, ele realiza o sorteio e altera as classes para mostrar o resultado na tela
-
+Butão do "sorteio" após o click no butão, ele realiza o sorteio e altera as classes para mostrar o resultado na tela
 */
 
 btnNewNumber.addEventListener("click", (event) => {
     event.preventDefault()  
 
-    let form1 = document.getElementById("form-1")
-    let form2 = document.getElementById("form-2")
-    
     form1.classList.remove("display-intial")
     form1.classList.add("display-none")
     form2.classList.remove("display-none")
@@ -53,14 +44,27 @@ function newNumber() {
                 result.push(Nresult)
                 }
             } else {
-                result.push(Nresult)
+                result.push(Nresult)    
             }
             
         }
+        
+        result.forEach((numero) => {
+            // Criando elementos para receber os resultados
+            const resultLi = document.createElement("li")
+            const resultSpan = document.createElement("span")
+            
+            resultSpan.textContent = numero
+            
+            // Onde será adicinado(o que será adicionado)
+            resultLi.append(resultSpan) 
+            list.append(resultLi)
+        });
     }
+
+
     console.log(result)
 
     LuckNumber()
-    
 }
 
